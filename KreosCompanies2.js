@@ -22,7 +22,7 @@ rp(url)
   });
 
 app.get("/", function(req, res){
-	res.json(INVESTMENTS)
+	res.send(INVESTMENTS)
 })
 
 app.set('port', process.env.PORT || 3000);
